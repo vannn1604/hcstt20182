@@ -1,0 +1,9 @@
+<form action="" method="POST" enctype="multipart/form-data"> 
+	<h3>Bệnh nhân đã mắc bệnh Động kinh.</h3>
+    {% csrf_token %} 
+    <table>
+    	Thêm bệnh nhân này vào cơ sở tri thức:
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Thêm" />
+</form>

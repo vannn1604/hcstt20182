@@ -1,0 +1,9 @@
+<form action="" method="POST" enctype="multipart/form-data"> 
+	<h3>Chuẩn đoán bệnh Động kinh</h3>
+    {% csrf_token %} 
+    <table>
+    	Tải lên file dữ liệu bệnh nhân
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Kết quả" />
+</form>
